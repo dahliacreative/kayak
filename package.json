@@ -1,0 +1,30 @@
+{
+  "name": "kayak-the-thames",
+  "version": "1.0.0",
+  "description": "Website for Team Finn Kayak the Thames Challenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dahliacreative/kayak.git"
+  },
+  "author": "Simon Sturgess <simon@dahliacreative.com> (http://www.dahliacreative.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dahliacreative/kayak/issues"
+  },
+  "homepage": "https://github.com/dahliacreative/kayak#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "node-bourbon": "^4.2.8",
+    "sass-globbing": "^1.0.0-alpha1"
+  }
+}
