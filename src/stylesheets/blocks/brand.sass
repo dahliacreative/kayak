@@ -1,0 +1,27 @@
+.brand
+  display: block
+  position: relative
+  width: 380px
+  z-index: 1
+
+  @media(min-width: 1024px)
+    +transition(.5s $ease-in-out-quint)
+
+  img
+    display: block
+
+  &--bhf
+    width: 140px
+
+  &--main
+    +position(absolute, 50px null null 50%)
+    +transform(translateX(-50%))
+
+  .header--fixed &
+    width: 140px
+
+    &--bhf
+      width: 60px
+
+    &--main
+      top: 10px

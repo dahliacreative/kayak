@@ -1,0 +1,19 @@
+.rays
+  +position(absolute, 0px)
+  overflow: hidden
+
+  &__rays
+    +animation(rays 10s infinite linear)
+    +backface-visibility(hidden)
+    +position(absolute, 50% null null 50%)
+    +size(130vw)
+    +transform(translate(-50%, -50%))
+
+    svg
+      fill: rgba($white, 0.1)
+
++keyframes(rays)
+  from
+    +transform(translate3d(-50%, -50%, 0) rotate(0deg))
+  to
+    +transform(translate3d(-50%, -50%, 0) rotate(10deg))

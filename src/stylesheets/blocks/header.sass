@@ -1,0 +1,75 @@
+.header
+  +position(fixed, 0px 0px null)
+  background-color: $jaffa
+  padding: 60px 0
+
+  .container
+    +align-items(center)
+    +display(flex)
+    +justify-content(space-between)
+
+  &__strapline
+    -webkit-font-smoothing: antialiased
+    color: $white
+    font-family: Bebas
+    font-size: 38px
+    line-height: .9
+    margin: 0
+    text-transform: uppercase
+
+  &__rays
+    +animation(rays 50s infinite linear)
+    +position(absolute, 50% null null 50%)
+    +transform(translate(-50%, -50%))
+    +size(110vw)
+
+    svg
+      fill: rgba($white, 0.1)
+  &--fixed
+    padding: 10px 0
+
+    .header
+      &__strapline
+        font-size: 30px
+
+  @media(min-width: 1024px)
+    +transition(padding .5s $ease-in-out-quint)
+    &__strapline
+      +transition(.5s $ease-in-out-quint)
+
+  @media(max-width: 1023px)
+    padding: 10px 0
+
+    &__strapline
+      font-size: 30px
+
+    .brand
+      width: 140px
+      &--bhf
+        width: 60px
+      &--main
+        top: 10px
+
+  @media(max-width: 459px)
+    .container
+      +flex-direction(column)
+    &__strapline
+      margin: 10px 0
+      text-align: center
+      br
+        display: none
+    .brand--main
+      +order(1)
+      +position(relative, auto)
+      +transform(none)
+      margin: 0 auto -80px
+      width: 100%
+      img
+        width: 140px
+        margin: 0 auto
+
++keyframes(rays)
+  from
+    +transform(translate(-50%, -50%) rotate(0deg))
+  to
+    +transform(translate(-50%, -50%) rotate(90deg))

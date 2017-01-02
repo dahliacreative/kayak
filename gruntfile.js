@@ -8,6 +8,17 @@ module.exports = function(grunt) {
       build: ['app']
     },
 
+    copy: {
+      build: {
+        files: [{
+        expand: true,
+        cwd: 'src/fonts',
+        src: ['**/*.*'],
+        dest: 'app/fonts'
+      }]
+      }
+    },
+
     sass: {
       build: {
         options: {
@@ -78,7 +89,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/images',
-          src: ['**/*.{png,jpg,gif}'],
+          src: ['**/*.{png,jpg,gif,svg}'],
           dest: 'app/images'
         }]
       }
@@ -116,6 +127,14 @@ module.exports = function(grunt) {
           spawn: false,
           livereload: true
         }
+      },
+      fonts: {
+        files: ['src/fonts/**/*'],
+        tasks: ['copy'],
+        options: {
+          spawn: false,
+          livereload: true
+        }
       }
     }
 
@@ -128,9 +147,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'sass:build', 'concat:build', 'imagemin', 'watch']);
-  grunt.registerTask('production', ['clean', 'sass:dist', 'concat:dist', 'uglify', 'imagemin']);
+  grunt.registerTask('default', ['clean', 'copy', 'sass:build', 'concat:build', 'imagemin', 'watch']);
+  grunt.registerTask('production', ['clean', 'copy', 'sass:dist', 'concat:dist', 'uglify', 'imagemin']);
 
 };
