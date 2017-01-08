@@ -1,2 +1,18 @@
 body
   font-family: Museo, sans-serif
+
+.heading
+  font-family: 'Bebas'
+
+  &__label
+    +responsive-font(4vw, 26px, 40px)
+    display: block
+    margin-bottom: 30px
+    span
+      display: inline-block
+      background-color: $android-green
+      color: $white
+      padding: 10px 30px
+
+  &--one
+    +responsive-font(5vw, 30px, 56px)

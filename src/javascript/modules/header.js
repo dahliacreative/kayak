@@ -9,6 +9,7 @@ RN.Header = function() {
     var fixed = document.body.scrollTop > 0,
         header = document.querySelector('.header');
     header.classList.toggle('header--fixed', fixed);
+    document.body.classList.toggle('shrunk', fixed);
   }
 
   return {

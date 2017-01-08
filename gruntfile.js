@@ -15,6 +15,11 @@ module.exports = function(grunt) {
         cwd: 'src/fonts',
         src: ['**/*.*'],
         dest: 'app/fonts'
+      }, {
+        expand: true,
+        cwd: 'src/video',
+        src: ['**/*.*'],
+        dest: 'app/video'
       }]
       }
     },
