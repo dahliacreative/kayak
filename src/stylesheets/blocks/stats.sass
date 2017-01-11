@@ -1,0 +1,35 @@
+.stats
+  +display(flex)
+  +flex-wrap(wrap)
+  margin: 0
+  padding: 0
+  list-style: none
+
+  &__stat
+    +flex(1)
+    text-align: center
+
+  &__title
+    color: $dark-cerulean
+    font-family: Bebas
+    font-size: 36px
+    margin: 40px 0 0 0
+    span
+      display: block
+
+  &__icon
+    max-width: 150px
+    display: block
+    margin: 0 auto
+
+  @media(max-width: 1023px)
+    &__stat
+      +flex(none)
+      width: 50%
+
+  @media(max-width: 639px)
+    &__list
+      display: block
+
+    &__stat
+      width: 100%

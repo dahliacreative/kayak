@@ -2,6 +2,7 @@
   overflow: hidden
   color: $white
   position: relative
+  background-color: $dark-cerulean
 
   .container
     +display(flex)
@@ -19,22 +20,30 @@
     +responsive-font(2vw, 16px, 21px)
     padding: 80px 0 40px
     line-height: 1.8
+    position: relative
+    &::after
+      +position(absolute, 100% null null 0px)
+      content: ""
+      width: 130px
+      height: 4px
+      background-color: $jaffa
 
   &__media
     +position(absolute, 50% null null 50%)
     +transform(translate(-50%, -50%))
     min-width: 100%
     min-height: 100%
+    display: none
 
   @media(max-width: 1023px)
     .container
       display: block
-      padding: 80px 20px
+      padding: 100px 20px 80px
       > *
         width: 100%
 
     &__copy
-      padding: 0
+      padding: 0 0 20px
 
     h1
       padding: 0

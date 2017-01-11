@@ -11,7 +11,7 @@ body
     padding-top: 100px
 
   @media(max-width: 459px)
-    padding-top: 230px !important
+    padding-top: 0 !important
 
   &.shrunk
     padding-top: 100px
@@ -20,3 +20,35 @@ body
   margin: 0 auto
   max-width: 1100px
   padding: 0 20px
+
+.section
+  padding: 60px 0
+  p:not([class])
+    +responsive-font(2vw, 16px, 24px)
+    margin-left: 270px
+    line-height: 1.6
+    &:first-of-type
+      font-weight: bold
+      color: $jaffa
+      padding-top: 40px
+  &--shade
+    background-color: $medium-candy-apple-red
+    color: $white
+    .heading--two
+      color: inherit
+    .media
+      float: right
+      margin: 0 0 50px 50px
+    p:not([class])
+      margin-left: auto
+      margin-right: 270px
+      &:first-of-type
+        color: inherit
+
+  @media(max-width: 1023px)
+    p:not([class])
+      margin-left: auto
+      margin-right: auto
+      max-width: 800px
+      &:first-of-type
+        padding: 0

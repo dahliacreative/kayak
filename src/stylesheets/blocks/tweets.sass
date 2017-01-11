@@ -1,0 +1,70 @@
+.tweets
+  background: $dark-cerulean
+  position: relative
+  overflow: hidden
+  .container
+    +display(flex)
+    +align-items(center)
+    > *
+      width: 50%
+      position: relative
+      z-index: 1
+      box-sizing: border-box
+  &::before
+    +position(absolute, 0 null 0 0)
+    width: 50%
+    background-color: $seagull
+    content: ''
+  &::after
+    +size(0)
+    +position(absolute, 50% null null 50%)
+    +transform(translate(0%, -50%))
+    content: ''
+    border-style: solid
+    border-width: 150px 0 150px 70px
+    border-color: transparent transparent transparent $seagull
+  &__tweet
+    font-size: 20px
+    color: $dark-cerulean
+    line-height: 1.6
+    padding: 40px 0
+    +display(flex)
+    +align-items(center)
+    img
+      margin-right: 30px
+  &__follow
+    color: $white
+    font-family: 'Bebas'
+    font-size: 40px
+    text-transform: uppercase
+    padding: 40px 0 40px 130px
+    a
+      text-decoration: none
+      color: $seagull
+      display: block
+
+  @media(max-width: 1023px)
+    .container
+      display: block
+      padding: 0
+      > *
+        width: auto
+    &__tweet
+      padding: 30px 20px
+      background-color: $seagull
+      font-size: 18px
+    &__follow
+      padding: 30px 20px
+      text-align: center
+    &::before
+      display: none
+    &::after
+      display: none
+
+  @media(max-width: 539px)
+    &__tweet
+      display: block
+      font-size: 16px
+      img
+        margin: 20px 20px 20px 0
+        float: left

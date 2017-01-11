@@ -4,7 +4,7 @@
   padding: 60px 0
   height: 300px
   box-sizing: border-box
-  z-index: 1
+  z-index: 10
 
   .container
     +align-items(center)
@@ -48,6 +48,7 @@
         top: 10px
 
   @media(max-width: 459px)
+    +position(static, auto)
     height: 230px
     .container
       +flex-direction(column)
