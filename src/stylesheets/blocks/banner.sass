@@ -33,9 +33,11 @@
     +transform(translate(-50%, -50%))
     min-width: 100%
     min-height: 100%
-    display: none
+    opacity: 0.6
 
   @media(max-width: 1023px)
+    background: url('../images/banner.jpg') center center no-repeat
+    background-size: cover
     .container
       display: block
       padding: 100px 20px 80px
@@ -44,6 +46,9 @@
 
     &__copy
       padding: 0 0 20px
+
+    &__media
+      display: none
 
     h1
       padding: 0

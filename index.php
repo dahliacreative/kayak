@@ -127,6 +127,169 @@
         <p>Please join us in supporting the lifesaving research by sponsoring us as we kayak the Thames in June 2017. All donations are secure and go directly to the British Heart Foundation Research Fund.</p>
       </div>
     </section>
+    <section class="section section--plain">
+      <div class="container">
+        <h2 class="heading heading--two">Our Supporters</h2>
+        <img src="app/images/help.svg" class="media" alt="">
+        <p>Kayak the Thames wouldn’t be possible without the help of our generous supporters. A heartfelt thank you goes to the following organisations and individuals for their kind donations and support. Your contribution is highly appreciated.</p>
+        <p>We’re looking for suppliers of accommodation, boats and venue for the finale party. Are you able to help? If so, we’d love to hear from you and put your logo pride of place on all promo for the event. Please get in touch with Adam at <a href="mailto:adam@kayakthethames.com">adam@kayakthethames.com</a></p>
+        <div class="slider">
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+          <div>
+            <img src="http://placehold.it/265x185" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="donate">
+      <div class="container">
+        <h2 class="heading heading--two">Amount <br/>Raised:</h2>
+        <div class="track">
+          <?php
+          $html = file_get_contents('https://giftofhope.bhf.org.uk/In-Memory/Finn-Castleton');
+          $dom = new DOMDocument();
+          $dom->loadHTML($html);
+          $xpath = new DOMXpath($dom);
+          $result = $xpath->query('//p[@class="amount"]');
+          $number = str_replace('£', '', $result->item(0)->nodeValue); ?>
+          <p class="track__total"><span id="total">
+          </span> of &pound;10,000 target</p>
+          <div class="track__bar" data-num="<?php echo $number?>"></div>
+        </div>
+        <a href="https://giftofhope.bhf.org.uk/In-Memory/Finn-Castleton" class="button">Donate Securely</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="app/javascript/application.js"></script>
   </body>
 

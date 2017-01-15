@@ -1,7 +1,20 @@
 .media
+  position: relative
   float: left
-  margin: 0 50px 50px 0
+  margin: 0 50px 100px 0
+  overflow: hidden
+  &:hover
+    img
+      +transform(scale(1.1))
+  &::after
+    +size(172px 200px)
+    +position(absolute, 50% null null 50%)
+    +transform(translate(-50%, -50%))
+    background: url('../images/play.svg') 0 0 no-repeat
+    content: ''
+    pointer-events: none
   img
+    +transition(transform .3s)
     max-width: 100%
     margin: 0 auto
     display: block

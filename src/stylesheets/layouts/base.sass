@@ -3,6 +3,7 @@ body
   padding: 300px 0 0 0
   box-sizing: border-box
   min-height: calc(100vh + 1px)
+  color: $black
 
   @media(min-width: 1024px)
     +transition(padding-top .5s $ease-in-out-quint)
@@ -23,6 +24,11 @@ body
 
 .section
   padding: 60px 0
+  a:not([class])
+    color: $jaffa
+    text-decoration: none
+    &:hover
+      color: $dark-cerulean
   p:not([class])
     +responsive-font(2vw, 16px, 24px)
     margin-left: 270px
@@ -31,6 +37,11 @@ body
       font-weight: bold
       color: $jaffa
       padding-top: 40px
+  &--plain
+    p:not([class])
+      &:first-of-type
+        color: $black
+        font-weight: normal
   &--shade
     background-color: $medium-candy-apple-red
     color: $white
