@@ -27,6 +27,7 @@ $('.donate').waypoint(function(direction) {
   offset: '75%'
 })
 $('.sharetastic').sharetastic({
+  sprite: 'app/images/sharetastic.svg',
   services: {
     facebook: {
       href: 'https://www.facebook.com/Kayak2017/'
