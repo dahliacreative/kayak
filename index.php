@@ -94,6 +94,14 @@
         </ul>
       </div>
     </section>
+    <section class="section section--route">
+      <div class="container">
+        <h2 class="heading heading--two">The Route</h2>
+        <div class="route">
+          <img src="app/images/route.svg" alt="">
+        </div>
+      </div>
+    </section>
     <section class="section">
       <div class="container">
         <h2 class="heading heading--two">The Story</h2>
@@ -166,9 +174,12 @@
         <h2 class="heading heading--two">Amount <br/>Raised:</h2>
         <div class="track">
           <?php
+
           $html = file_get_contents('https://giftofhope.bhf.org.uk/In-Memory/Finn-Castleton');
           $dom = new DOMDocument();
+          libxml_use_internal_errors(true);
           $dom->loadHTML($html);
+          libxml_use_internal_errors(false);
           $xpath = new DOMXpath($dom);
           $result = $xpath->query('//p[@class="amount"]');
           $number = str_replace('£', '', $result->item(0)->nodeValue); ?>
@@ -176,119 +187,23 @@
           </span> of &pound;10,000 target</p>
           <div class="track__bar" data-num="<?php echo $number?>"></div>
         </div>
-        <a href="https://giftofhope.bhf.org.uk/In-Memory/Finn-Castleton" class="button">Donate Securely</a>
+        <a href="https://giftofhope.bhf.org.uk/In-Memory/Finn-Castleton" class="button">
+          <svg width="26" height="34.5" viewBox="0 0 26 34.5"">
+            <path d="M24.2,16.5H23v-6h0c0,0,0-0.3,0-0.4c0-5.5-4.5-10-10-10C7.5,0.1,3,4.6,3,10.1c0,0.1,0,0.4,0,0.4h0v6H1.8c-1,0-1.8,0.6-1.8,1.6v14.5c0,1,0.8,1.9,1.8,1.9h22.4c1,0,1.8-0.8,1.8-1.9V18.1C26,17.1,25.2,16.5,24.2,16.5z M18,16.5H8c0,0,0-6.4,0-6.5c0-2.8,2.2-5.1,5-5.1s5,2.3,5,5.1C18,10.1,18,16.5,18,16.5z"/>
+          </svg>
+          Donate Securely
+        </a>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <footer role="contentinfo" class="footer">
+      <img src="app/images/footer.svg" alt="">
+      <div class="container">
+        <img src="app/images/bhf.svg" alt="British Heart Foundation"/>
+        <img src="app/images/logo.svg" alt="Kayak the Thames - Team Finn"/>
+        <p>Lorem ipsum se raerionet ra quam aceatium quis et expedig nihicatis ne nest, offici iur, cus eost volore ea verrum.</p>
+        <div class="sharetastic"></div>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="app/javascript/application.js"></script>
   </body>

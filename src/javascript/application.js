@@ -26,3 +26,19 @@ $('.donate').waypoint(function(direction) {
 }, {
   offset: '75%'
 })
+$('.sharetastic').sharetastic({
+  services: {
+    facebook: {
+      href: 'https://www.facebook.com/Kayak2017/'
+    },
+    twitter: {
+      href: 'https://twitter.com/Kayak2017/'
+    },
+    pinterest: false,
+    linkedin: false,
+    googleplus: false,
+    tumblr: false,
+    email: false,
+    print: false
+  }
+})

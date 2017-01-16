@@ -11,16 +11,21 @@ module.exports = function(grunt) {
     copy: {
       build: {
         files: [{
-        expand: true,
-        cwd: 'src/fonts',
-        src: ['**/*.*'],
-        dest: 'app/fonts'
-      }, {
-        expand: true,
-        cwd: 'src/video',
-        src: ['**/*.*'],
-        dest: 'app/video'
-      }]
+          expand: true,
+          cwd: 'src/fonts',
+          src: ['**/*.*'],
+          dest: 'app/fonts'
+        }, {
+          expand: true,
+          cwd: 'src/video',
+          src: ['**/*.*'],
+          dest: 'app/video'
+        }, {
+          expand: true,
+          cwd: 'src/images',
+          src: ['**/*.svg'],
+          dest: 'app/images'
+        }]
       }
     },
 
@@ -94,7 +99,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/images',
-          src: ['**/*.{png,jpg,gif,svg}'],
+          src: ['**/*.{png,jpg,gif}'],
           dest: 'app/images'
         }]
       }
