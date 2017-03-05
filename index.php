@@ -116,7 +116,7 @@
       <div class="container">
         <div class="tweets__tweet">
           <img src="app/images/tweet.svg" alt="">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod earum iste non dolor pariatur ex deserunt exercitationem similique dicta eum, explicabo sed blanditiis magni dolorem.
+            <?php include 'tweet.php';?>
         </div>
         <div class="tweets__follow">
           follow us
