@@ -4,4 +4,24 @@
     display: block
     outline: none
     img
-      max-width: 100%
+      max-width: 80%
+      margin: 0 auto
+      display: block
+  .slick-arrow
+    +position(absolute, 50% null null -20px)
+    +transform(translateY(-50%))
+    +size(45px)
+    outline: none
+    z-index: 1
+    font-size: 0
+    border: none
+    background: url('../images/directionleft.svg') center center no-repeat
+    background-size: auto 100%
+    padding: 0
+
+    &.slick-next
+      left: auto
+      right: -20px
+      background: url('../images/directionright.svg') center center no-repeat
+      background-size: auto 100%
+

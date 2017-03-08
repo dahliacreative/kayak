@@ -3,13 +3,14 @@
   float: left
   margin: 0 50px 100px 0
   overflow: hidden
+  outline: none
   &:hover
     img
       +transform(scale(1.1))
   &::after
     +size(172px 200px)
     +position(absolute, 50% null null 50%)
-    +transform(translate(-50%, -50%))
+    +transform(translate(-50%, -50%) scale(.75))
     background: url('../images/play.svg') 0 0 no-repeat
     content: ''
     pointer-events: none

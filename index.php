@@ -105,7 +105,7 @@
     <section class="section">
       <div class="container">
         <h2 class="heading heading--two">The Story</h2>
-        <a href="" class="media"><img src="http://placehold.it/640x400" alt=""></a>
+        <a href="https://player.vimeo.com/video/201577029?title=0&byline=0&portrait=0" class="media" data-fancybox><img src="/app/images/story.jpg" alt=""></a>
         <p>Finn was born on the 17 June 2015 with half a working heart. His condition (Hypoplastic Left Heart Syndrome) meant that he would need major heart surgery days after birth, and at least two more operations within the first few years of his life.</p>
         <p>Although the first operation wasn’t plain sailing, after a seven week stay in hospital we finally got to take him home. He gave everybody lots of smiles (including the family cat), slept through the night (like a good boy) and got lots of attention when out on walks (because of his handsome looks).</p>
         <p>After four weeks of normality it was time to be assessed for his second surgery. Unfortunately Finn’s heart was weak and the second stage surgery couldn’t be completed fully. We made the most of time in hospital but Finn’s condition gradually deteriorated to the point he was sedated and a heart transplant was his only option.</p>
@@ -127,7 +127,7 @@
     <section class="section section--shade">
       <div class="container">
         <h2 class="heading heading--two">The Cause</h2>
-        <a href="" class="media"><img src="http://placehold.it/640x400" alt=""></a>
+        <a href="https://player.vimeo.com/video/201566790?title=0&byline=0&portrait=0" class="media" data-fancybox><img src="/app/images/cause.jpg" alt=""></a>
         <p>Congenital Heart Defects (CHD’s) are the most common form of birth defects in the UK, affecting 1 in every 125 babies born. Thanks to critical research, the number of children who survive being born with a heart defect has improved dramatically in recent years.</p>
         <p>In 1961 only 20% lived to their first birthday. Now the number of children dying has fallen by more than 80%, but CHD’s are still the No. 1 cause of death from a birth defect – killing twice as many children as cancer every year.</p>
         <p>In later life, Coronary Heart Disease is the leading cause of death worldwide. Before the British Heart Foundation there was no treatment for heart attacks and heart surgery was 10x more risky than it is today. We’ve come a long way, millions of people are alive thanks to the British Heart Foundation – but there’s much more to do.</p>
@@ -143,28 +143,22 @@
         <p>We’re looking for suppliers of accommodation, boats and venue for the finale party. Are you able to help? If so, we’d love to hear from you and put your logo pride of place on all promo for the event. Please get in touch with Adam at <a href="mailto:adam@kayakthethames.com">adam@kayakthethames.com</a></p>
         <div class="slider">
           <div>
-            <img src="http://placehold.it/265x185" alt="">
+            <img src="/app/images/bdh.png" alt="BD&H">
           </div>
           <div>
-            <img src="http://placehold.it/265x185" alt="">
+            <img src="/app/images/dahlia.png" alt="Dahliacreative">
           </div>
           <div>
-            <img src="http://placehold.it/265x185" alt="">
+            <img src="/app/images/fsc.png" alt="Fleet Street Communications">
           </div>
           <div>
-            <img src="http://placehold.it/265x185" alt="">
+            <img src="/app/images/skd.png" alt="St. Katharine Docks">
           </div>
           <div>
-            <img src="http://placehold.it/265x185" alt="">
+            <img src="/app/images/sw.png" alt="Shane Whiting">
           </div>
           <div>
-            <img src="http://placehold.it/265x185" alt="">
-          </div>
-          <div>
-            <img src="http://placehold.it/265x185" alt="">
-          </div>
-          <div>
-            <img src="http://placehold.it/265x185" alt="">
+            <img src="/app/images/you.png" alt="Shane Whiting">
           </div>
         </div>
       </div>
