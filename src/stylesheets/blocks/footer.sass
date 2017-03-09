@@ -5,10 +5,19 @@
   overflow: hidden
   padding-top: 580px
 
+  &::before
+    +size(160px 50px)
+    +position(absolute, 251px null null 50%)
+    margin-left: -80px
+    content: ''
+    background-color: $dark-cerulean
+
+
   > img
     +position(absolute, 38px null null 50%)
     +transform(translateX(-50%))
     width: 1057px
+    z-index: 1
 
   .container
     +align-items(flex-end)
